@@ -1,0 +1,9 @@
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\bin\Debug\TheCoachingCenter.exe.config
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\bin\Debug\TheCoachingCenter.exe
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\bin\Debug\TheCoachingCenter.pdb
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\obj\Debug\TheCoachingCenter.csprojResolveAssemblyReference.cache
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\obj\Debug\TheCoachingCenter.MainForm.resources
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\obj\Debug\TheCoachingCenter.Properties.Resources.resources
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\obj\Debug\TheCoachingCenter.csproj.GenerateResource.Cache
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\obj\Debug\TheCoachingCenter.exe
+c:\users\waqas ahmed ansari\documents\visual studio 2013\Projects\TheCoachingCenter\TheCoachingCenter\obj\Debug\TheCoachingCenter.pdb
