@@ -34,6 +34,8 @@
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.admissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attendenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.markAbsenteesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feeSubmissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -62,7 +64,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // studentToolStripMenuItem
@@ -83,9 +85,25 @@
             // 
             // attendenceToolStripMenuItem
             // 
+            this.attendenceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.markAbsenteesToolStripMenuItem,
+            this.showAttendanceToolStripMenuItem});
             this.attendenceToolStripMenuItem.Name = "attendenceToolStripMenuItem";
             this.attendenceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.attendenceToolStripMenuItem.Text = "Attendence";
+            // 
+            // markAbsenteesToolStripMenuItem
+            // 
+            this.markAbsenteesToolStripMenuItem.Name = "markAbsenteesToolStripMenuItem";
+            this.markAbsenteesToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.markAbsenteesToolStripMenuItem.Text = "Mark Absentees";
+            // 
+            // showAttendanceToolStripMenuItem
+            // 
+            this.showAttendanceToolStripMenuItem.Name = "showAttendanceToolStripMenuItem";
+            this.showAttendanceToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.showAttendanceToolStripMenuItem.Text = "Show Attendance";
+            this.showAttendanceToolStripMenuItem.Click += new System.EventHandler(this.showAttendanceToolStripMenuItem_Click);
             // 
             // accountToolStripMenuItem
             // 
@@ -100,6 +118,7 @@
             this.feeSubmissionToolStripMenuItem.Name = "feeSubmissionToolStripMenuItem";
             this.feeSubmissionToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.feeSubmissionToolStripMenuItem.Text = "Fee Submission";
+            this.feeSubmissionToolStripMenuItem.Click += new System.EventHandler(this.feeSubmissionToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -127,6 +146,8 @@
         private System.Windows.Forms.ToolStripMenuItem attendenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem feeSubmissionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem markAbsenteesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showAttendanceToolStripMenuItem;
     }
 }
 

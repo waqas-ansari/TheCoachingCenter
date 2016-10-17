@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace TheCoachingCenter
 {
-    public partial class MainForm : Form
+    public partial class Attendance : Form
     {
-        public MainForm()
+        public Attendance()
         {
             InitializeComponent();
         }
 
-        private void admissionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Attendance_Load(object sender, EventArgs e)
         {
-            StudentAdmission admission = new StudentAdmission();
-            admission.Show();
+            DateTime dateTime = DateTime.Today;
+            int dateToday = dateTime.Day;
+            MessageBox.Show(dateToday.ToString());
         }
+
     }
 }
