@@ -174,8 +174,8 @@ namespace TheCoachingCenter
                         "VALUES(@id, @name, @fatherName, @dateOfBirth, @gender, @admissionDate, @school, @class, @section, @group, @fee) ";
             string studentContactQuery = "INSERT INTO StudentContactDetail (StudentId, Address, StudentPhone, ParentsPhone, Email)" + 
                         "VALUES (@id1, @address, @studentPhone, @parentsPhone, @email)";
-            string studentFeeDetailQuery = "INSERT INTO StudentFeeDetail (StudentId, Month, FeeAmount, AdmissionFeeAmount, LateCharges, OtherCharges, Total, FeeSubmitted)" + 
-                        "VALUES (@id2, @month, @fee1, @registration, 0, 0, @total, 'false')";
+            string studentFeeDetailQuery = "INSERT INTO StudentFeeDetail (StudentId, Month, FeeAmount, LateCharges, OtherCharges, Total, FeeSubmitted)" + 
+                        "VALUES (@id2, @month, @fee1, 0, @registration, @total, 'false')";
 
             //Student Detail Query Execution
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -227,7 +227,7 @@ namespace TheCoachingCenter
                 command.ExecuteNonQuery();
 
 
-                MessageBox.Show("Successfully added new Student\nAuto Generated ID: " + lblID.Text + "\nKINDLY USE THIS ID", "Student Added", MessageBoxButtons.OK);
+                MessageBox.Show("Successfully added new Student\nAuto Generated ID: " + lblID.Text, "Student Added", MessageBoxButtons.OK);
 
 
             }

@@ -51,14 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB_TheCoachingCenterDataSet.cs">
-      <DependentUpon>DB_TheCoachingCenterDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_TheCoachingCenterDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_TheCoachingCenterDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FeeVoucher.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,11 +62,6 @@
     </Compile>
     <Compile Include="Forms\Attendance.Designer.cs">
       <DependentUpon>Attendance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DB_TheCoachingCenterDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_TheCoachingCenterDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forms\FeeSubmission.cs">
       <SubType>Form</SubType>
@@ -122,28 +109,6 @@
     <EmbeddedResource Include="Forms\Admission.resx">
       <DependentUpon>Admission.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DB_TheCoachingCenterDataSet.xsc">
-      <DependentUpon>DB_TheCoachingCenterDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DB_TheCoachingCenterDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_TheCoachingCenterDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_TheCoachingCenterDataSet.xss">
-      <DependentUpon>DB_TheCoachingCenterDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DB_TheCoachingCenterDataSet1.xsc">
-      <DependentUpon>DB_TheCoachingCenterDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DB_TheCoachingCenterDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_TheCoachingCenterDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_TheCoachingCenterDataSet1.xss">
-      <DependentUpon>DB_TheCoachingCenterDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

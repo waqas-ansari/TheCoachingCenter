@@ -29,30 +29,32 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnShow = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTotalCharges = new System.Windows.Forms.TextBox();
+            this.txtOtherCharges = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLateCharges = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.txtMonthlyFee = new System.Windows.Forms.TextBox();
+            this.feeReport = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.FeeVoucher1 = new TheCoachingCenter.FeeVoucher();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblTotalCash = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnSubmit);
+            this.groupBox1.Controls.Add(this.btnShow);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -62,15 +64,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter Student ID";
             // 
-            // btnSubmit
+            // btnShow
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(119, 33);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(78, 23);
-            this.btnSubmit.TabIndex = 15;
-            this.btnSubmit.Text = "Show";
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            this.btnShow.Location = new System.Drawing.Point(119, 33);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(78, 23);
+            this.btnShow.TabIndex = 15;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label1
             // 
@@ -93,12 +95,12 @@
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtTotalCharges);
+            this.groupBox2.Controls.Add(this.txtOtherCharges);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtLateCharges);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtMonthlyFee);
             this.groupBox2.Location = new System.Drawing.Point(12, 102);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(212, 216);
@@ -134,19 +136,21 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Others";
             // 
-            // textBox4
+            // txtTotalCharges
             // 
-            this.textBox4.Location = new System.Drawing.Point(39, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 20);
-            this.textBox4.TabIndex = 20;
+            this.txtTotalCharges.Enabled = false;
+            this.txtTotalCharges.Location = new System.Drawing.Point(39, 179);
+            this.txtTotalCharges.Name = "txtTotalCharges";
+            this.txtTotalCharges.Size = new System.Drawing.Size(131, 20);
+            this.txtTotalCharges.TabIndex = 20;
             // 
-            // textBox3
+            // txtOtherCharges
             // 
-            this.textBox3.Location = new System.Drawing.Point(39, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 20);
-            this.textBox3.TabIndex = 20;
+            this.txtOtherCharges.Enabled = false;
+            this.txtOtherCharges.Location = new System.Drawing.Point(39, 131);
+            this.txtOtherCharges.Name = "txtOtherCharges";
+            this.txtOtherCharges.Size = new System.Drawing.Size(131, 20);
+            this.txtOtherCharges.TabIndex = 20;
             // 
             // label3
             // 
@@ -157,12 +161,13 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Late Charges";
             // 
-            // textBox2
+            // txtLateCharges
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 20);
-            this.textBox2.TabIndex = 18;
+            this.txtLateCharges.Enabled = false;
+            this.txtLateCharges.Location = new System.Drawing.Point(39, 84);
+            this.txtLateCharges.Name = "txtLateCharges";
+            this.txtLateCharges.Size = new System.Drawing.Size(131, 20);
+            this.txtLateCharges.TabIndex = 18;
             // 
             // label2
             // 
@@ -173,27 +178,28 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Monthly Fee";
             // 
-            // textBox1
+            // txtMonthlyFee
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
-            this.textBox1.TabIndex = 16;
+            this.txtMonthlyFee.Enabled = false;
+            this.txtMonthlyFee.Location = new System.Drawing.Point(39, 36);
+            this.txtMonthlyFee.Name = "txtMonthlyFee";
+            this.txtMonthlyFee.Size = new System.Drawing.Size(131, 20);
+            this.txtMonthlyFee.TabIndex = 16;
             // 
-            // crystalReportViewer1
+            // feeReport
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(230, 12);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.FeeVoucher1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(890, 432);
-            this.crystalReportViewer1.TabIndex = 2;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.feeReport.ActiveViewIndex = -1;
+            this.feeReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.feeReport.Cursor = System.Windows.Forms.Cursors.Default;
+            this.feeReport.Location = new System.Drawing.Point(230, 12);
+            this.feeReport.Name = "feeReport";
+            this.feeReport.Size = new System.Drawing.Size(890, 432);
+            this.feeReport.TabIndex = 2;
+            this.feeReport.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblTotalCash);
             this.groupBox3.Location = new System.Drawing.Point(12, 367);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(212, 77);
@@ -201,23 +207,34 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Total Cash";
             // 
-            // button1
+            // lblTotalCash
             // 
-            this.button1.Location = new System.Drawing.Point(75, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblTotalCash.AutoSize = true;
+            this.lblTotalCash.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalCash.Location = new System.Drawing.Point(78, 33);
+            this.lblTotalCash.Name = "lblTotalCash";
+            this.lblTotalCash.Size = new System.Drawing.Size(55, 23);
+            this.lblTotalCash.TabIndex = 0;
+            this.lblTotalCash.Text = "label6";
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(75, 324);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(78, 23);
+            this.btnSubmit.TabIndex = 16;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click_1);
             // 
             // FeeSubmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1132, 499);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.crystalReportViewer1);
+            this.Controls.Add(this.feeReport);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FeeSubmission";
@@ -227,6 +244,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -236,20 +255,21 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLateCharges;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMonthlyFee;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private System.Windows.Forms.TextBox txtTotalCharges;
+        private System.Windows.Forms.TextBox txtOtherCharges;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer feeReport;
         private FeeVoucher FeeVoucher1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblTotalCash;
     }
 }

@@ -39,8 +39,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.attendanceGrid = new System.Windows.Forms.DataGridView();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -67,6 +69,7 @@
             this.btnShowAttendance.TabIndex = 11;
             this.btnShowAttendance.Text = "Show Attendance";
             this.btnShowAttendance.UseVisualStyleBackColor = true;
+            this.btnShowAttendance.Click += new System.EventHandler(this.btnShowAttendance_Click);
             // 
             // label12
             // 
@@ -118,6 +121,7 @@
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Size = new System.Drawing.Size(95, 21);
             this.cmbClass.TabIndex = 8;
+            this.cmbClass.SelectedIndexChanged += new System.EventHandler(this.cmbClass_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -148,11 +152,23 @@
             this.button2.Text = "Mark Absents";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // attendanceGrid
+            // 
+            this.attendanceGrid.AllowUserToAddRows = false;
+            this.attendanceGrid.AllowUserToDeleteRows = false;
+            this.attendanceGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.attendanceGrid.Location = new System.Drawing.Point(12, 124);
+            this.attendanceGrid.Name = "attendanceGrid";
+            this.attendanceGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.attendanceGrid.Size = new System.Drawing.Size(903, 352);
+            this.attendanceGrid.TabIndex = 6;
+            // 
             // Attendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 488);
+            this.Controls.Add(this.attendanceGrid);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Name = "Attendance";
@@ -161,6 +177,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,6 +195,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView attendanceGrid;
 
     }
 }
