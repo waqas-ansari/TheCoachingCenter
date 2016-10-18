@@ -37,9 +37,11 @@ namespace TheCoachingCenter.Forms
             txtOther = (TextObject)report.ReportDefinition.Sections["Section2"].ReportObjects["txtOther"];
             txtTotal = (TextObject)report.ReportDefinition.Sections["Section2"].ReportObjects["txtTotalCharges"];
 
-            string dateText = DateTime.Today.ToString("EEE, MMM dd, yyyy");
+            string dateText = DateTime.Today.ToString("EEEE, MMM dd, yyyy");
 
             txtDate.Text = dateText;
+
+            
         }
 
         private void FeeSubmission_Load(object sender, EventArgs e)
